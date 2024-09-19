@@ -3,7 +3,7 @@ Predicting Water Pumps Status
 
 Emre Ozturk 
  
-##Description of the problem:  
+## Description of the problem:  
 Using data (WP_fulldataset.csv) provided from Taarifa and the Tanzanian Ministry of Water, can you predict which pumps are functional, which are functional but need some repairs (functional needs repair), and which don't work at all (non functional)? Predict one of these three classes based on a number of variables about what kind of pump is operating, when it was installed, and how it is managed. A smart understanding of which waterpoints will fail can improve maintenance operations and ensure that clean, potable water is available to communities across Tanzania. 
 Prelude to Study: 
 First of all, I have performed the domain research shortly; try to understand data frame, data structure and feature types. Based on this, our findings as following; 
@@ -14,7 +14,7 @@ First of all, I have performed the domain research shortly; try to understand da
  
 Additionally, detailed exploratory analysis has been performed. Distribution of target and feature values and univariate analysis have been shown. With Univariate analysis, the relations between the attributes is examined as detailed. 
  
-##Preprocessing:
+## Preprocessing:
 IMPORTANT NOTE: Remember Input data also needs preprocessing for to use model and get correct predictions. 
 In this step, I have take care the findings as the result of above analysis. 
 - To dealing with the null values, I have replaced them as “various”, then separate these data from the main data.  
@@ -26,7 +26,7 @@ In this step, I have take care the findings as the result of above analysis.
 - For the feature selection, observed that life of a pump depends on the following features; construction year , population, quantity and waterpoint types. Therefore, I choose these mentioned features as important independents. 
 Now, whole data is cleaned and is ready for the prediction.  
  
-##Predictions: 
+## Predictions: 
 My prediction process is explained step by step as below. 
 - Firstly the data is separated as train and test. 
 - The scaling is performed to avoid feature dominancy and outliers. I trained this algorithms: Logistic Regression, Decision Tree, Random Forest and XGBOOST. As a result, I choose the Random Forest Model which gives the best accuracy value with 0.79 and this model is chosen also for the reasons that our data have many categorical values and RF algorithm needs less cost than other models. 
@@ -39,7 +39,7 @@ My prediction process is explained step by step as below.
 • Min samples leaf: The minimum number of samples required to be at a leaf node (default=1). This parameter is similar with min samples splits. However, this describes the minimum number of samples at the leafs, the base of the tree. 
 • Cross Validation (stratified k-fold): Used while algorithm being trained. I used 5 folds; it means 4 train and 1 validation. 
  
-##Instructions (How to run the project):
+## Instructions (How to run the project):
 First of all you need Python in your computer.
 In the project folder you will find train.py , predict.py , RFmodel.bin and project’s notebook.
 The trained algorithm needs a water pump’s features as an input. Remember Input data also needs preprocessing .
@@ -51,7 +51,7 @@ The trained model needs a water pump’s features as an input
 -   You can find predic-test.py script in project's folder for test the model
 -   You will find a Docker file in the folder.  
 
-##Dependencies   (How to run the project)
+## Dependencies   (How to run the project)
 For use the project you need some dependencies:
 - First of all you need Python in your computer.
 - For notebook you need an anaconda distribution and jupyter notebook.
@@ -59,7 +59,7 @@ For use the project you need some dependencies:
 - If you want to use the project’s notebook  you need to install some libraries:
 Numpy , pandas, sklearn, xgboost
 
-##How to install dependencies (for windows):
+## How to install dependencies (for windows):
 
 First in cmd you can create a virtual environment:
 
