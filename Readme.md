@@ -94,7 +94,7 @@ In your virtual environment:
 pip install -U scikit-learn
 
 
-###Installing XGBOOST:
+### Installing XGBOOST:
 
 If you use anaconda or miniconda, try installing xgboost with conda.
 First, uninstall xgboost with pip 
